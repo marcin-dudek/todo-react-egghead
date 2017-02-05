@@ -8,9 +8,9 @@ class App extends Component {
         super()
         this.state = {
             todos: [
-                { id: 1, name: "Learn JSX", isComplete: true },
-                { id: 2, name: "Build awesome app", isComplete: false },
-                { id: 3, name: "Ship it!", isComplete: false }
+                { id: 1, name: "Learn JSX", isCompleted: true },
+                { id: 2, name: "Build awesome app", isCompleted: false },
+                { id: 3, name: "Ship it!", isCompleted: false }
             ],
 
             currentTodo: ''
@@ -34,7 +34,7 @@ class App extends Component {
                 </div>
                 <div className="Todo-App">
                     <TodoForm handleInputChange={this.handleInputChange} currentTodo={this.state.currentTodo} />
-                    <TodoList todos={this.state.todos}/>
+                    <TodoList todos={this.state.todos} />
                 </div>
             </div>
         );
