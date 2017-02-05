@@ -1,5 +1,5 @@
 import React from 'react'
-import {TodoItem} from './TodoItem'
+import { TodoItem } from './TodoItem'
 
 export const TodoList = (props) => {
     return (
@@ -9,4 +9,8 @@ export const TodoList = (props) => {
             </ul>
         </div>
     )
+}
+
+TodoList.propTypes = {
+    todos: React.PropTypes.array.isRequired
 }
